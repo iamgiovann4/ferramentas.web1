@@ -1,0 +1,10 @@
+*{
+    box-shadow: inset 0px 0px 2px 0px rgb(91, 57, 146);
+    
+}
+body{
+    background-color: rgb(236, 225, 255);
+}
+p {
+   padding: 5px;
+}

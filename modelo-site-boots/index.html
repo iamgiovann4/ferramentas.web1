@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollspy</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-image: linear-gradient(90deg, #ff9188 0, #ff9976 6.25%, #ffa164 12.5%, #ffa954 18.75%, #ffb244 25%, #ffba35 31.25%, #ffc226 37.5%, #ffca19 43.75%, #f8d110 50%, #e6d712 56.25%, #d2dd1d 62.5%, #bde22c 68.75%, #a7e73c 75%, #8feb4d 81.25%, #72ee5f 87.5%, #4cf171 93.75%, #00f385 100%);">
+        <div class="container">
+            <!-- Elemento de destaque no navbar -->
+            <a href="index.html" class="navbar-brand">FW1</a>
+
+            <!-- Cria um botão do tipo sanduiche quando o tamanho da tela não for mais 'lg' -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Criação dos itens do navbar -->
+            <div class="navbar-collapse collapse" id="navbarsite">
+                <!-- Itens do navbar -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Testemunhos</a></li>
+                </ul>
+
+                <!-- Dropdown -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">
+                            Social...
+                        </a>
+                        <div class="dropdown-menu w-25">
+                            <a href="#" class="dropdown-item">Facebook</a>
+                            <a href="#" class="dropdown-item">Twitter</a>
+                            <a href="#" class="dropdown-item">Instagram</a>
+                            <a href="#" class="dropdown-item"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Formulário de pesquisa -->
+                <form class="form-inline">
+                    <input class="form-control ml-lg-5 mr-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-dark" type="submit">OK</button>
+                </form>
+
+            </div> <!-- div dos itens do navbar -->
+        </div> <!-- container -->
+    </nav> <!-- Navbar do site -->
+
+    <!--carousel-->
+    <div class="carousel slide" id="carouselhome" data-ride="carousel">
+        <!--div que ira sustentar as imagens e textos do carousel-->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/img1.jpg" class="img-fluid d-block" alt="">
+                <div class="carousel-caption">
+                <h3>Lorem ipsum</h3>
+                    <p class="d-none d-sm-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sed molestias autem dicta! Minima dolore dicta eaque magnam voluptatem aliquid, reiciendis incidunt unde veniam non placeat voluptates rerum corporis sequi.</p>  
+                </div>           
+            </div><!--item 1 do carousel-->
+
+            <div class="carousel-item">
+                <img src="img/img2.jpg" class="img-fluid d-block" alt="">
+                <div class="carousel-caption">
+                <h3>Lorem ipsum</h3>
+                    <p class="d-none d-sm-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sed molestias autem dicta! Minima dolore dicta eaque magnam voluptatem aliquid, reiciendis incidunt unde veniam non placeat voluptates rerum corporis sequi.</p>  
+                </div>           
+            </div><!--item 2 do carousel-->
+
+            <div class="carousel-item">
+                <img src="img/img3.jpg" class="img-fluid d-block" alt="">
+                <div class="carousel-caption">
+                <h3>Lorem ipsum</h3>
+                    <p class="d-none d-sm-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sed molestias autem dicta! Minima dolore dicta eaque magnam voluptatem aliquid, reiciendis incidunt unde veniam non placeat voluptates rerum corporis sequi.</p>  
+                </div>           
+            </div><!--item 3 do carousel-->
+
+            <!--Controler '<' '>'
+            dos slides-->
+            <a href="#carouselhome" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#carouselhome" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+
+            <!--Lista com os indicadores-->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselhome" data-slide-to="0"></li>
+                <li data-target="#carouselhome" data-slide-to="1"></li>
+                <li data-target="#carouselhome" data-slide-to="2"></li>
+            </ol>
+        </div><!--div class="carousel-inner"-->
+    </div><!--Carousel-->
+
+    <!--Scrollspy-->
+    <div class="container">
+        <!-- Primeira linha contém um texto de boas vindas -->
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1>Bem-vindo(a) ao site!</h1>
+                <p>Distinctio veniam officiis ...</p>
+            </div>
+        </div>
+        <!-- Segunda linha contém o navbar e o conteúdo do scrollspy -->
+        <div class="row">
+            <!-- Área com o nav-bar do scrollspy -->
+            <div class="col-3 d-none d-md-block">
+                <nav class="navbar" id="navbarScrollspy">
+                    <nav class="nav nav-pills flex-column">
+                        <a href="#item1" class="nav-link">Inicio</a>
+                        <a href="#item2" class="nav-link">Perfil</a>
+                        <a href="#item3" class="nav-link">Serviço</a>
+                        <a href="#item4" class="nav-link">Testemunhos</a>
+
+                        <a href="#item5" class="nav-link">Social</a>
+                        <nav class="navbar">
+                            <nav class="nav nav-pills flex-column">
+                                <a href="#item5-1" class="nav-link ml-2">Facebook</a>
+                                <a href="#item5-2" class="nav-link ml-2">Twitter</a>
+                                <a href="#item5-3" class="nav-link ml-2">Instagram</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+            <!-- Área com o conteúdo "espiado" -->
+            <div class="col-9">
+                <div class="scrollspyhome text-justify p-3" data-spy="scroll" data-target="#navbarScrollspy" data-offset="50">
+
+                    <h1 id="item1">Inicio</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item2">Perfil</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item3">Serviço</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item4">Testemunhos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item5">Social</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item5-1">Facebook</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item5-2">Twitter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+
+                    <h1 id="item5-3">Instagram</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum dolorem soluta a cupiditate optio officia ducimus obcaecati, quia voluptate, commodi deleniti, fugit minus omnis dignissimos! Nisi nam praesentium laudantium.</p>
+                </div>
+            </div> <!-- Área com o conteúdo "espiado" -->
+        </div> <!-- Segunda linha contém o navbar e o conteúdo do scrollspy -->
+    </div> <!-- Scrollspy -->
+
+    <!-- Card -->
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header col- text-center p-2">Lembrancinhas</div>
+                    <img src="img/card1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Consectetur adipisicing</h5>
+                        <h6 class="card-sub-title mb-2 text-muted">Nobis numquam provident</h6>
+                        <p class="card-text small text-justify">Quae voluptas placeat et aperiam exercitationem eum assumenda repellat asperiores.</p>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Preço: R$ 99,99</li>
+                        <li class="list-group-item">Prazo: 01/01/2021</li>
+                        <li class="list-group-item">Desconto: 99%</li>
+                    </ul>
+                    <div class="card-body p-2">
+                        <a href="#" class="card-link">Frete</a>
+                        <a href="#" class="card-link">Detalhes...</a>
+                    </div>
+                    <div class="card-footer text-right card-rodape-empresa text-muted">
+                        Distribuído por Tabajara
+                    </div>
+                </div> <!-- Card -->
+            </div> <!-- column x3 -->
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header col- text-center p-2">Lembrancinhas</div>
+                    <img src="img/card1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Consectetur adipisicing</h5>
+                        <h6 class="card-sub-title mb-2 text-muted">Nobis numquam provident</h6>
+                        <p class="card-text small text-justify">Quae voluptas placeat et aperiam exercitationem eum assumenda repellat asperiores.</p>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Preço: R$ 99,99</li>
+                        <li class="list-group-item">Prazo: 01/01/2021</li>
+                        <li class="list-group-item">Desconto: 99%</li>
+                    </ul>
+                    <div class="card-body p-2">
+                        <a href="#" class="card-link">Frete</a>
+                        <a href="#" class="card-link">Detalhes...</a>
+                    </div>
+                    <div class="card-footer text-right card-rodape-empresa text-muted">
+                        Distribuído por Tabajara
+                    </div>
+                </div> <!-- Card -->
+            </div> <!-- column x3 -->
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header col- text-center p-2">Lembrancinhas</div>
+                    <img src="img/card1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Consectetur adipisicing</h5>
+                        <h6 class="card-sub-title mb-2 text-muted">Nobis numquam provident</h6>
+                        <p class="card-text small text-justify">Quae voluptas placeat et aperiam exercitationem eum assumenda repellat asperiores.</p>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Preço: R$ 99,99</li>
+                        <li class="list-group-item">Prazo: 01/01/2021</li>
+                        <li class="list-group-item">Desconto: 99%</li>
+                    </ul>
+                    <div class="card-body p-2">
+                        <a href="#" class="card-link">Frete</a>
+                        <a href="#" class="card-link">Detalhes...</a>
+                    </div>
+                    <div class="card-footer text-right card-rodape-empresa text-muted">
+                        Distribuído por Tabajara
+                    </div>
+                </div> <!-- Card -->
+            </div> <!-- column x3 -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

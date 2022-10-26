@@ -1,0 +1,9 @@
+.scrollspyhome{
+    position: relative;
+    overflow: auto;
+    height: 300px;
+}
+
+.card-rodape-empresa{
+    font-size: 0.7rem;
+}
