@@ -1,3 +1,7 @@
+body {
+    background-image: url(../astronomia-bootstrap/midias/img1.jpg);
+}
+
 .scrollspyhome{
     position: relative;
     overflow: auto;
