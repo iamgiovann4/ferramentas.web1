@@ -1,15 +1,15 @@
 body {
-    background-image: url(midias/imagem1.jpg);
-    background-size: cover;
+    background-image: linear-gradient(135deg, #00a4cb 0, #00a3d1 4.55%, #12a1d5 9.09%, #339fd8 13.64%, #489dda 18.18%, #5b9adb 22.73%, #6c97db 27.27%, #7b94da 31.82%, #8991d7 36.36%, #968ed3 40.91%, #a28acf 45.45%, #ad87c9 50%, #b784c3 54.55%, #bf81bb 59.09%, #c77fb4 63.64%, #cd7cab 68.18%, #d27ba3 72.73%, #d57a9a 77.27%, #d87a91 81.82%, #d97a88 86.36%, #d97b80 90.91%, #d87c77 95.45%, #d67e70 100%);
+       /* background-image: url(midias/imagem1.jpg); */
+       /* background-size: cover; */
 }
  
 .bg-nav{
-    background-image: linear-gradient(265deg, #f43ee3 0, #da30e8 12.5%, #b925ec 25%, #901ef0 37.5%, #6e40f8 50%, #5065e0 62.5%, 
-    #3253fa 75%, #2b55fa 87.5%, #1547fa 100%);
+    background-image: linear-gradient(70deg, #00d1ff 0, #00cfff 4.55%, #00cbff 9.09%, #03c8ff 13.64%, #51c4ff 18.18%, #75bfff 22.73%, #91bbff 27.27%, #aab5ff 31.82%, #bfb0ff 36.36%, #d2abff 40.91%, #e3a5ff 45.45%, #f2a0ff 50%, #ff9bf3 54.55%, #ff97e7 59.09%, #ff94da 63.64%, #ff91cd 68.18%, #ff90bf 72.73%, #ff90b1 77.27%, #ff91a4 81.82%, #ff9396 86.36%, #ff968a 90.91%, #ff9a7e 95.45%, #ff9e73 100%);
 }
 
 .conteudo {
-    background-color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(255, 255, 255, 0.548);
     height: auto;
     padding: 15px;
 }
@@ -22,7 +22,6 @@ h2 {
 .scrollspyhome{
     position: relative;
     overflow: auto;
- 
     height: 300px;
 }
 
