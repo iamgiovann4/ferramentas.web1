@@ -328,15 +328,85 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ad ipsam necessitatibus nobis omnis dicta impedit exercitationem maxime nam. Provident reprehenderit illo ex modi recusandae sunt aspernatur molestias sit architecto.</p>
                             <p>Veniam ut, laboriosam voluptatum, maiores quibusdam eveniet porro deleniti beatae minus provident explicabo maxime distinctio.</p>
                         </div>
-
                     </div> <!-- row -->
                 </div> <!-- nav-item-03 -->
-
             </div> <!-- nav-pills-content -->
-            
         </div> <!-- container -->
     </div> <!-- Jumbotron -->
 
+    <!-- Formulário -->
+    <div class="container">
+        <!-- Título para o Formulário -->
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <h1 class="display-4">
+                    <i class="fa-solid fa-id-card"></i>
+                    Cadastrar Dados
+                </h1>
+            </div>
+        </div> <!-- row -->
+
+        <!-- Linha para o Formulário -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <form> <!-- Corpo do Formulário -->
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputName">Nome completo</label>
+                            <input type="text" class="form-control" id="inputNomeCompleto">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="inputName">e-mail</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="ex. giovanna@domain.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputName">Endereço</label>
+                            <input type="text" class="form-control" id="inputEndereco" placeholder="ex. Rua Projetada A, 45 - Vila Nova">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inputName">CEP</label>
+                            <input type="text" class="form-control" id="inputCep" placeholder="ex. 022273-2415">
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label for="inputName">Cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="ex. Caraguatatuba">
+                        </div>
+                        <div class="form-group col-sm-1">
+                            <label for="inputName">UF</label>
+                            <select id="inputUF" class="form-control">
+                                <option>AC</option>
+                                <option>...</option>
+                                <option selected>SP</option>
+                                <option>...</option>
+                                <option>EX</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="inputName">Formação e Experiência</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="ex. Técnico em Informática completo. Trabalhei com as linguagens"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <button class="btn btn-primary" type="submit">Registrar</button>
+                        </div>
+                        <div class="form-group col-6 d-flex justify-content-end">
+                            <label class="form-check-label text-muted">
+                                <input type="checkbox"class="form-check-input"> Receber avisos por e-mail
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> <!-- container -->
 
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.js"></script>
