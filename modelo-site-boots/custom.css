@@ -11,3 +11,7 @@ body {
 .card-rodape-empresa{
     font-size: 0.7rem;
 }
+
+.fa-color-blue {
+    color: rgb(53, 108, 209);
+}
