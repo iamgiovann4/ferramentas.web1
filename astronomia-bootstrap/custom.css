@@ -9,6 +9,10 @@ body {
     background-color: rgba(255, 255, 255, 0.671);
 }
 
+.navbar > .container > .navbar-brand > h1{
+    color: purple;
+}
+
 .conteudo {
     background-color: rgba(255, 255, 255, 0.671);
     height: auto;
@@ -16,7 +20,6 @@ body {
 }
 
 h2 {
-    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -49,5 +52,9 @@ h2 {
 .navbar-brand{
     display: flex;
     align-items: center;
+}
+
+.card {
+    height: 750px;
 }
 
