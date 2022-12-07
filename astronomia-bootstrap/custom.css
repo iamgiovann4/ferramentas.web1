@@ -1,37 +1,44 @@
-* {
-    background-color: rgb(57, 47, 144);
-    color: white;
+body {
+    background-color: rgba(27, 36, 90, 0.973);
+    color: rgb(255, 250, 234);
 }
 .bg-nav{
-    background-color: rgba(93, 100, 189, 0.897);
+    background-color: rgba(27, 36, 90, 0.973);
 }
 .navbar-brand{
     display: flex;
     align-items: center;
 }
 .navbar > .container > .navbar-brand > h1{
-    color: rgb(230, 187, 255);
+    color: rgb(255, 202, 231);
 }
 #navbarsite> .navbar-nav > .nav-item > .nav-link{
     font-size: 20px;
 }
 #navbarsite> .navbar-nav > .nav-item > .active{
-    border-bottom: 3px solid rgb(220, 162, 253);
+    border-bottom: 3px solid rgb(255, 202, 231);
 }
-.card, .list-group-item{
-    color: rgb(207, 207, 207);
-    background-color: rgb(31, 30, 30);
+.card, .card-footer{
     border-radius: 40px;
 }
+.card, .list-group-item{
+    color: rgb(223, 222, 222);
+    background-color: rgb(173, 144, 160);
+}
+h5{
+    color: white;
+}
+h6{
+    color: rgb(177, 175, 175);
+}
 .conteudo {
-    background-color: rgba(37, 42, 124, 0.897);
-    /* background-color: rgba(255, 255, 255, 0.671); */
+    background-color: rgba(27, 36, 90, 0.13);
     height: auto;
     padding: 15px;
 }
 h2 {
     padding-bottom: 20px;
-    color: blueviolet;
+    color: rgb(255, 202, 231);
 }
 .scrollspyhome{
     position: relative;
@@ -54,7 +61,6 @@ h2 {
 .card-rodape-empresa{
     font-size: 0.7rem;
 }
-
 .card {
     height: 750px;
 }
@@ -64,6 +70,13 @@ h2 {
 .jumbotron{
     background-color: rgb(173, 210, 221);
     color: rgb(31, 31, 31);
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: rgb(226, 147, 191);
+}
+.nav-pills .nav-link, .nav-pills .show > .nav-link{
+    color: rgb(175, 180, 255);
 }
 footer{
     background-color: rgb(35, 93, 100);
