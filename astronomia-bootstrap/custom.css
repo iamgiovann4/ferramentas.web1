@@ -1,6 +1,6 @@
 body {
-    background-color: rgba(27, 36, 90, 0.973);
-    color: rgb(255, 250, 234);
+    background-color: rgb(255, 202, 231);
+    color: #fff;
 }
 .bg-nav{
     background-color: rgba(27, 36, 90, 0.973);
@@ -18,21 +18,23 @@ body {
 #navbarsite> .navbar-nav > .nav-item > .active{
     border-bottom: 3px solid rgb(255, 202, 231);
 }
+.row > .coluna > .card > .list-group{
+    border-radius: 0 0 40px 40px;
+}
 .card, .card-footer{
     border-radius: 40px;
 }
 .card, .list-group-item{
-    color: rgb(223, 222, 222);
-    background-color: rgb(173, 144, 160);
+    background-color: rgba(165, 164, 164, 0.726);
 }
 h5{
-    color: white;
+    color: rgb(252, 183, 221);
 }
 h6{
-    color: rgb(177, 175, 175);
+    color: rgb(199, 199, 199);
 }
 .conteudo {
-    background-color: rgba(27, 36, 90, 0.13);
+    background-color: rgba(27, 36, 90, 0.973);
     height: auto;
     padding: 15px;
 }
@@ -62,22 +64,19 @@ h2 {
     font-size: 0.7rem;
 }
 .card {
-    height: 750px;
-}
-.text-muted{
-    color: rgb(251, 230, 230);
+    height: 700px;
 }
 .jumbotron{
-    background-color: rgb(173, 210, 221);
+    background-color: rgb(170, 114, 145);
     color: rgb(31, 31, 31);
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: rgb(226, 147, 191);
+    background-color: rgb(199, 55, 134);
 }
 .nav-pills .nav-link, .nav-pills .show > .nav-link{
-    color: rgb(175, 180, 255);
+    color: rgb(255, 202, 231);
 }
 footer{
-    background-color: rgb(35, 93, 100);
+    background-color:  rgb(97, 96, 96);
 }
